@@ -1,0 +1,71 @@
+.list_m{
+    width: 100%;
+    height: 100vh;
+    padding: 0 .6875rem;
+    margin-top: .68125rem;
+    .list_c{
+        width: 100%;
+        height: 14.83125rem;
+        background-color: #282828;
+        margin-bottom: .68125rem;
+        -webkit-clip-path:
+                polygon(
+                    13px 0, calc(100% - 13px) 0, 100% 13px,
+                    100% calc(100% -  13px), calc(100% - 13px) 100%,
+                    13px 100%, 0 calc(100% - 13px), 0 13px
+                );
+        .list_img{
+            height: 11.625rem;
+            position: relative;
+            .img{
+                position: absolute;
+                width: 100%;
+                height: 11.625rem;
+                -webkit-clip-path:
+                    polygon(
+                        13px 0, calc(100% - 13px) 0, 100% 13px,
+                        100% calc(100% -  13px), calc(100% - 13px) 100%,
+                        13px 100%, 0 calc(100% - 13px), 0 13px
+                    );
+                }
+            .tixing{
+                position: absolute;
+                background: url(../../static/images/tixing.png) no-repeat;
+                background-size: 100% 100%;
+                height: 10.8375rem;
+                width: 9.7rem;
+                top: 4.5rem;
+                left: 14.15rem;
+            }
+        }
+        
+        .list_introduce{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 .4rem 0 .9375rem;
+            color: #FFFFFF;
+            span:nth-child(1){
+                font-family: PingFangSC-Light;
+                font-size: 1.125rem;
+                letter-spacing: .009375rem;
+            }
+            span:nth-child(2){
+                font-family: PingFangSC-Light;
+                font-size: 1rem;
+                letter-spacing: .013125rem;
+            }
+        }
+        .list_source{
+            font-family: PingFangSC-Light;
+            font-size: .75rem;
+            color: #9E9E9E;
+            letter-spacing: .01125rem;
+            text-align: justify;
+            margin-left: .875rem;
+            padding-bottom: .3rem;
+        }
+    }
+}
+

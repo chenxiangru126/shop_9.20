@@ -1,0 +1,140 @@
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .reg2_wrap{
+        .reg2_content{
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          transform: translate(-50%,-50%);
+          
+          >div{
+              font-size: 1.25rem;
+              color: #FFFFFF;
+              letter-spacing: 0.12px;
+              text-align: justify; 
+              font-style: normal;
+              text-align: center;
+          }
+          >p{
+              font-size: 1.5rem;
+              color: #FFFFFF;
+              letter-spacing: .0075rem;
+              text-align: justify;
+              text-align: center;
+              margin: 2rem 0 3rem;
+          }
+          >p>span:nth-child(2){
+              font-size: 2.5rem;
+              font-family: PingFangSC-Semibold;
+          }
+          >p>span:nth-child(3){
+              font-size: .75rem;
+              font-family: PingFangSC-Semibold;
+          }
+          .reg2_contnet_con{
+              width: 19.4375rem;
+              height: 10.5625rem;
+              background: url("../../static/images/zhifu@2x.png") no-repeat;
+              background-size: 100%;
+              display: flex;
+              justify-content:center;
+              align-content: center;
+              flex-direction:column;
+              >span{
+                  width: 90%;
+                  height: 5.28125rem;
+                  display: block;
+                  margin: 0 auto;
+              }
+          }
+      
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.875rem;
+          
+            .progressbar{
+              padding: 0;   
+              text-align: center;
+              width: 100%;
+              z-index: 99;
+              position: absolute;
+              left: 2.5rem;
+          
+              >li{
+                list-style-type: none;
+                font-size: .5625rem;
+                float: left;
+                position: relative;
+                >span{
+                  font-size: 14px;
+                  color: #4E4E4E;
+                  letter-spacing: 0.14px;
+                  position: absolute;
+                  top: -1.875rem;
+                  left: 22%;
+                  white-space: nowrap;
+      
+                }
+                .on{
+                  color: #4A8ADA;
+                }
+                .onActive{
+                  color: #4A8ADA;
+                  font-size: 18px;
+                  position: absolute;
+                  font-weight: bold;
+                  top: -1.875rem;
+                  left: 10%;
+      
+      
+                }
+      
+              }
+              >li:before{
+                content:"";
+                width: .8125rem;
+                height: .8125rem;
+                line-height: .8125rem;
+                display: block;
+                background: #1A1A1A;
+                border-radius: 50%;
+                margin: 0 auto .3125rem auto;
+                border: .0625rem solid #4E4E4E;
+      
+      
+              }
+              >li:after{
+                content: '';
+                width: calc(100% - .825rem);
+                height: .125rem;
+                background: #4E4E4E;
+                position: absolute;
+                left: calc((-100% + .825rem)/2);
+                top: .4375rem;
+              }
+              >li:last-child::before{
+                content: none;
+               
+              }
+             /*  >li.active:first-child::after{
+                background: #4E4E4E !important;  
+              } */
+            
+          
+              >li.active::before,>li.active::after{
+                background: #4A8ADA ;
+                color: white;
+              }
+            }
+          }
+      
+      }
+    }

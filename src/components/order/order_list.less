@@ -1,0 +1,188 @@
+.order_list_b{
+    width: 100%;
+    height: auto;
+    // padding: 0 .466667rem;
+    margin-top: .533333rem;
+    .order_list-nav{
+        color: #4A8ADA;
+        font-size: .933333rem;
+        .list-nav-b{
+            position: relative;
+            .l_t{margin-left: .866667rem}
+            .span_down{
+                width: 0;
+                height: 0;
+                border-left: .31875rem solid transparent;
+                border-right: .31875rem solid transparent;
+                border-top: .31875rem solid #4A8ADA;
+                margin-left: .1rem;
+            }
+            .span_up{
+                width: 0;
+                height: 0;
+                border-left: .31875rem solid transparent;
+                border-right: .31875rem solid transparent;
+                border-bottom: .31875rem solid #4A8ADA;
+                margin-left: .1rem;
+            }
+            .nav_list_c{
+                position: absolute;
+                top: 1.733333rem; 
+                left: 13rem;   
+                background:url(../../static/images/my_order_nav_bg.png) no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                width: 6.466667rem;
+                height: 15.066667rem;
+                text-align: center;
+                line-height: 2.3rem;
+                padding: 0.7rem 0;
+                font-size: .933333rem;
+                color: #fff;
+                z-index: 100;
+            }
+            .nav_list_c2{
+                position: absolute;
+                top: 1.733333rem; 
+                left: 13rem;   
+                background:url(../../static/images/bg-3.png) no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                width: 6.466667rem;
+                height: 13.5rem;
+                text-align: center;
+                line-height: 2.3rem;
+                padding: 0.7rem 0;
+                font-size: .933333rem;
+                color: #fff;
+                z-index: 100;
+            }
+        }
+        .tuihuo-icon{
+            background: #282828 url(../../static/images/th.png) no-repeat!important;
+            background-size: 4.466667rem!important;
+            background-position: -1% 9.266667rem !important;
+        }
+        .list-order-lib-search{
+            top: 5.5rem;
+        }
+        .list-order-lib{
+            padding:  0 .866667rem;
+            overflow: auto;
+            width: 100%;
+            position: fixed;
+            top: 7rem;
+            bottom: 0;
+            right: 0;
+            .order-lib_b{
+                position: relative;
+                background: #282828;
+                width: 100%;
+                height: 11.625rem;
+                padding: .733333rem .8rem .933333rem .6rem;
+                -webkit-clip-path:polygon(
+.666667rem 0, calc(100% - .666667rem) 0, 100% .666667rem,
+100% calc(100% - .666667rem), calc(100% - .666667rem) 100%,
+.666667rem 100%, 0 calc(100% - .666667rem), 0 .666667rem
+);
+                &:nth-child(n+2){
+                    margin-top: 1.066667rem;
+                }
+                .order-lib_b_1{
+                    padding: .6rem 0;   
+                    &>div:nth-child(1){
+                        width: 4.533333rem;
+                        height: 4.533333rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }  
+                    &>div:nth-child(2){
+                      padding:0 1.133333rem;
+                      max-width: 12rem;
+                      &>p:nth-child(1){
+                          height: 2.066667rem;
+                      }
+                    } 
+                    &>div:nth-child(3){
+                        padding-top: 1.066667rem;
+                        text-align: right;
+                        color: #fff;
+                    }   
+                }
+                .top_1{
+                    margin-top: -0.375rem;
+                }
+                .lib-btn-no{
+                    position: absolute;
+                    right: 7.066667rem;
+                    bottom: .5625rem;
+                    min-width:5.6rem;
+                    height: 1.666667rem;
+                    background:#4A8ADA;
+                    color: #fff;
+                    padding:0 .666667rem;
+                    border-radius: .533333rem;
+                    line-height: 1.666667rem;
+                    text-align: center;
+                    font-size: .933333rem;
+                }
+                .lib-btn-1{
+                    position: absolute;
+                    right: .8rem;
+                    bottom: .5625rem;
+                    min-width:5.6rem;
+                    height: 1.666667rem;
+                    background:#4A8ADA;
+                    color: #fff;
+                    padding:0 .666667rem;
+                    border-radius: .533333rem;
+                    line-height: 1.666667rem;
+                    text-align: center;
+                    font-size: .933333rem;
+                } 
+            }
+            
+        }
+       
+    }
+}
+.order-search{
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    left: 0;bottom: 0;
+    top: 0;right: 0;
+    overflow: auto;
+    z-index: 101;
+    padding-top: 4.266rem;
+    .search-top{
+        height: 1.333333rem;
+        background: #1A1A1A;
+    }
+    .search_box{
+        width: 100%;
+        height: 2.933333rem;
+        background: #1A1A1A;
+        .search_box_1{
+            width: 100%;
+            height: 1.8rem;
+            padding-left: 1.066667rem;
+            input{
+                width: 18.866667rem;
+                height: 1.8rem;
+                background:#282828 url(../../static/images/search.svg) no-repeat;
+                background-size: 1.4rem;
+                background-position: .266667rem center;
+                display: block;
+                height: 1.8rem;line-height: 1.8rem;
+                padding-left: 3rem;
+                border-radius: 1.4rem;
+            }
+            p{line-height: 1.8rem;}
+        }
+       
+    }
+}
